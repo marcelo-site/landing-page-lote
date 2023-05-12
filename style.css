@@ -1,0 +1,63 @@
+:root {
+    --color-1: #360E8F;
+    --color-2: #DB7A16;
+    --color-3: #4400DB;
+    --color-4: #16DB30;
+    --color-5: #008F13;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 10px;
+}
+
+#baner {
+    background-image: url("/img/baner-lote.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#minor {
+    color: var(--color-4);
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#baner #minor {
+    /* background-color: #dbd7d7f7;*/
+    background-color: var(--color-3);
+    transform: rotate(-20deg);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+#baner > div {
+    padding-top: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#baner > div > div {
+
+    display: inline-block;
+    margin-left: 33%;
+}
+
+#minor > div {
+    font-size: .5em;
+}
+#minor > div > span {
+    font-size: 4em;
+}
+
+#parcela span {
+    font-size: 3em;
+}
