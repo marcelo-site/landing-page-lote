@@ -10,10 +10,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0 10px;
+    margin: 0 3px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-1);
+}
+
+.btn {
+    padding: .5em .8em;
+    background-color: var(--color-5);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover { 
+    background-color: #05550f;
+}
+.bold {
+    font-weight: bold;
 }
 
 #baner {
@@ -24,40 +53,222 @@ body {
 }
 
 #minor {
-    color: var(--color-4);
+    color: white;
     font-size: 1.8em;
     font-weight: bold;
     text-align: center;
 }
 
 #baner #minor {
-    /* background-color: #dbd7d7f7;*/
-    background-color: var(--color-3);
-    transform: rotate(-20deg);
-    padding: 5px;
-    border-radius: 5px;
+    padding-top: 17%;
+    background-color: var(--color-5);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#baner>div {
+    display: flex;
+    flex-direction: column;
 
 }
 
-#baner > div {
+#baner>div>div {
     padding-top: 20%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
-#baner > div > div {
-
+#baner>div>div {
     display: inline-block;
-    margin-left: 33%;
+    margin: auto;
 }
 
-#minor > div {
+#minor>div {
     font-size: .5em;
 }
-#minor > div > span {
-    font-size: 4em;
+
+#minor span {
+    font-size: 2em;
 }
 
-#parcela span {
-    font-size: 3em;
+#entarda {
+    height: 50%;
+    padding-top: 0;
+    margin-left: 0;
+    position: relative;
+}
+
+#entrada p {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color-5);
+}
+
+p#big {
+    font-size: 2em;
+}
+
+#entrada p span {
+    font-weight: 900;
+}
+
+#entrada h2 {
+    color: var(--color-1);
+    font-size: 2em;
+}
+
+#entrada div {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+}
+
+#targeta {
+    padding: 20px 0;
+    background-color: var(--color-2);
+    text-align: center;
+    color: white
+}
+
+.bi-check-lg  {
+    margin: .5em;
+    color: white;
+    background-color: #0aff0a;
+    border-radius: 50%;
+}
+
+p span.bi-check-lg  {
+    margin: 3em;
+    font-size: 1em;
+}
+
+#description {
+    display: flex;
+}
+
+#description p {
+    margin: .5em;
+}
+#description>div:nth-child(1) {
+    flex: 1.5;
+}
+
+#description>div:nth-child(2) {
+    flex: 1;
+    padding: 2em .5em;
+}
+
+#description>div>div {
+    font-weight: bold;
+    margin-left: 2.5em;
+    margin-top: 1em;
+}
+
+#description div p span {
+    margin: .5em;
+}
+
+#description img {
+    width: 100%;
+}
+
+#description h3 {
+    margin-left: 1em;
+    font-size: 1.8em;
+    margin-top: 1em;
+}
+
+#gallery h3 {
+    font-size: 2em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#gallery img {
+    height: 24vw;
+    width: 100%;
+}
+
+#gallery {
+    margin-bottom: 4em;
+}
+
+#gallery>div>div {
+    display: grid;
+    gap: .5em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1em auto;
+}
+
+#gallery div span {
+    width: 100vw;
+    display: block;
+    text-align: center;
+}
+
+section#contact {
+    background-image: url("img/pexels-anton-4132538.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+section#contact p,
+section#contact h3 {
+    display: block;
+    font-size: 1.2em;
+    margin: .3em auto;
+    color: var(--color-5);
+    font-weight: bold;
+}
+
+section#contact > div {
+    color: var(--color-1);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+section#contact > div > div {
+    margin-top: 2em;
+}
+
+section#contact #phone {
+    font-size: 1.6em;
+    margin: 1em auto;
+    color: var(--color-1);
+}
+div#info-contact {
+    margin-top: 2em;
+}
+
+section#contact>div p.info-contact {
+    font-size: 1em;
+}
+
+#location {
+    margin-top: 3em;
+    background-image: url("img/1.jpg");
+    height: 400px;
+}
+
+#location>div {
+    height: calc(100% - 4.2em);
+    border: 3em solid #db7a16b5;
+    border-top: 0;
+}
+
+#location >div>div {
+    color: transparent;
+    height: 100%;
+}
+
+#location h3 {
+    padding: .5em 0;
+    background-color: #db7a16b5;
+    text-align: center;
+    font-size: 2em;
 }
