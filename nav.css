@@ -1,0 +1,31 @@
+nav {
+    height: 50px;
+    width: 90vw;
+    color: var(--color-1);
+}
+nav li {
+    list-style: none;
+    margin: 10px;
+    /* height: 1em; */
+    /* padding: .5em .8em; */
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--color-3);
+    padding: .5em .8em;
+}
+
+nav li:hover {
+    background-color: var(--color-3);
+}
+
+nav a:hover {
+    color: white;
+}

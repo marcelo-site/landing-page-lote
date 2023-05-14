@@ -7,11 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Lote Lagoa</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="background.css">
+
+    <script src="js.js" defer></script>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Vantagens</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Localização</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <div id="baner">
@@ -68,42 +81,72 @@
                 </div>
             </div>
             <div>
-                <img src="img/couple-holding-small-house-medium-shot.jpg" alt="">
+                <img src="gallery/couple-holding-small-house-medium-shot.jpg" alt="">
             </div>
         </section>
         <section id="gallery">
             <div>
                 <h3>IMAGENS DO LOCAL</h3>
                 <div>
-                    <img src="img/gallery/WhatsApp Image 2023-05-11 at 17.47.47.jpeg" alt="">
-                    <img src="img/gallery/WhatsApp Image 2023-05-11 at 17.47.48 (1).jpeg" alt="">
-                    <img src="img/gallery//WhatsApp Image 2023-05-11 at 17.47.48 (2).jpeg" alt="">
-                    <img src="img/gallery//WhatsApp Image 2023-05-11 at 17.47.48 (3).jpeg" alt="">
+                    <div><img data-gallery="" src="gallery/img/image-1.jpeg" alt=""></div>
+                    <div><img data-gallery="" src="gallery/img/image-2.jpeg" alt=""></div>
+                    <div><img data-gallery="" src="gallery/img/image-3.jpeg" alt=""></div>
+                    <div><img data-gallery="" src="gallery/img/image-4.jpeg" alt=""></div>
+
                 </div>
-                <span><a href="#">Ver mais</a></span>
+                <div class="flex">
+                    <a href="gallery.html">
+                        Ver mais
+                        <span><i class="bi bi-forward"></i></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="loteamento">
+            <div>
+                <h1>SOBRE O LOTEAMENTO</h1>
+                <p>O loteamento estar localizado no trevo do bairro lagoa, com tudo para ser a melhor escolha de quem sonha em ter um lar par chamar de seu, com ruas e avenidas projetadas para o melhor fluxo possivél, a avenida principal (prefeito josé inácio da silva) que corta o loteamento é robusta o suficiente para suportar um fluxo intenso de veiculos e pedestres.</p>
             </div>
         </section>
         <section id="contact">
             <div></div>
             <div>
-                   <div>
+                <div>
                     <h3>Reserve já o seu lote</h3>
                     <p>Entre em contato</p>
-                    <p class="bold" id="phone">(81) 99186-9812 | WhatsApp</p>
-                    <a class="btn" href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote.">Iniciar conversa</a>
+                    <p class="bold" id="phone">(81) 99186-9812</p>
+                    <a class="btn"
+                        href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote.">Iniciar
+                        conversa</a>
                     <div id="info-contact">
-                        <p class="info-contact" >Venha morar
+                        <p class="info-contact">Venha morar
                             no melhor loteamento</p>
-                            <p class="info-contact" >de Brejo de madre de deus</p>
+                        <p class="info-contact">de Brejo de madre de deus</p>
                     </div>
-                   </div>
+                </div>
             </div>
         </section>
         <section id="location">
             <h3>LOCALIZAÇÂO</h3>
             <div></div>
         </section>
-        <i class="bi bi-volume-mute-fill"></i>
+        <div>
+            <i class="bi bi-whatsapp"></i>
+        </div>
+
+        <div id="modal" class="none">
+            <div id="modal-src">
+                <span id="exit">x</span>
+                <span id="left">
+                    < </span>
+                        <div></div>
+                        <span id="right">></span>
+            </div>
+        </div>
+        <div id="background" class="none"></div>
     </main>
 </body>
+
 </html>

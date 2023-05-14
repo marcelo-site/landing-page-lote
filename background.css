@@ -1,0 +1,76 @@
+body {
+    background-color: white;
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(26, 24, 24, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#modal {
+    position: fixed;
+    top: 3vh;
+    left: 3vw;
+    margin: auto;
+    width: 94vw;
+    height: 94vh;
+    z-index: 10;
+}
+
+
+#modal-src {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+}
+
+#modal-src div {
+    width: 100%;
+    height: 100%;
+}
+
+.over-hidden {
+    overflow: hidden;
+}
+
+#modal-src img,
+#modal-src video {
+    width: 100%;
+    height: 100%;
+}
+
+#modal-src span {
+    background-color: black;
+    padding: 1em .5em;
+    color: white;
+    position: absolute;
+    font-size: 1em;
+    font-weight: bold;
+    top: 50%;
+    z-index: 20;
+}
+
+#modal-src span:nth-child(1) {
+    right: 5px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    padding: 2px 15px 21px 8px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 15px;
+}
+
+#modal-src span:nth-child(2) {
+    left: 5px;
+}
+
+#modal-src span:nth-child(4) {
+    right: 5px;
+}
