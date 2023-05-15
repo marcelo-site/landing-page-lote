@@ -212,7 +212,7 @@ p span.bi-check-lg {
 }
 
 section#contact {
-    background-image: url("gallery/pexels-anton-4132538.jpg");
+    background-image: url("gallery/pexels-anton-4132538.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -259,7 +259,7 @@ section#contact>div p.info-contact {
 
 #location {
     margin-top: 3em;
-    background-image: url("gallery/1.jpg");
+    background-image: url("gallery/1.webp");
     height: 350px;
 }
 

@@ -7,7 +7,7 @@
 
 @media (min-width: 666px) {
     #baner {
-        background-image: url("gallery/baner-lote.jpg");
+        background-image: url("gallery/baner-lote.webp");
         background-size: cover;
         background-position: center left;
         height: 100vh;
@@ -20,7 +20,7 @@
 
 @media (max-width:665px) {
     #baner {
-        background-image: url("gallery/baner-small.jpg");
+        background-image: url("gallery/baner-small.webp");
         background-size: cover;
         background-position: center left;
         height: 100vh;
@@ -86,7 +86,7 @@
 
 @media (max-width: 396px) {
     #baner {
-        background-image: url("gallery/baner-phone.jpg");
+        background-image: url("gallery/baner-phone.webp");
         background-size: cover;
         background-position: center left;
         height: 85vh;
