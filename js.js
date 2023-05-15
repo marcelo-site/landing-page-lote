@@ -9,6 +9,7 @@ const exit = document.querySelector('#exit')
 const toggleOff = document.querySelector('#toggle-off')
 const toggleOn = document.querySelector('#toogle-on')
 const navUl = document.querySelector('nav ul')
+
 const galleryLength = gallery.length
 
 const imgModal = (arquivo) => {
@@ -104,3 +105,15 @@ toggleOn.addEventListener('click', () => {
     navUl.setAttribute('style', 'display: none')
     background.setAttribute('style', '')
 })
+
+function a() {
+    const li = document.querySelectorAll('nav ul li')
+    let largura = window.screen.width;
+    if (largura < 666) {
+        li.forEach(el => el.addEventListener('click', () => toggleOn.click()))
+        console.log(1)
+    }
+}
+a()
+
+

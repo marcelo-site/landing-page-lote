@@ -6,6 +6,10 @@
     --color-5: #008F13;
 }
 
+section {
+    scroll-margin-top: 55px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@
 body {
     margin: 0 3px;
     overflow-x: hidden;
+    
 }
 
 a {
