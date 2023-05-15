@@ -76,7 +76,7 @@ body {
 }
 
 @media (max-width: 566px) {
-    #modal-src div {
+    #modal-src img {
         width: 100%;
         height: 98%;
     }
