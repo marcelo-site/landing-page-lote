@@ -74,3 +74,10 @@ body {
 #modal-src span:nth-child(4) {
     right: 5px;
 }
+
+@media (max-width: 566px) {
+    #modal-src div {
+        width: 100%;
+        height: 98%;
+    }
+}
