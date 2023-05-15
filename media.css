@@ -1,0 +1,168 @@
+@media (max-width:796px) {
+    #entrada div {
+        /* bottom: -30px; */
+        right: 3%;
+    }
+}
+
+@media (min-width: 666px) {
+    #baner {
+        background-image: url("/gallery/baner-lote\ \(1\).jpg");
+        background-size: cover;
+        background-position: center left;
+        height: 100vh;
+    }
+
+    #toggle {
+        display: none;
+    }
+}
+
+@media (max-width:665px) {
+    #baner {
+        background-image: url("/gallery/baner-small.jpg");
+        background-size: cover;
+        background-position: center left;
+        height: 100vh;
+    }
+
+    #description>div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #description img {
+        width: 90%;
+        height: 90%;
+    }
+
+    #toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        background-color: white;
+        position: absolute;
+        left: 15vw;
+        height: calc(100vh - 50px);
+        width: 85vw;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        display: table;
+    }
+}
+
+@media (max-width: 566px) {
+    #description {
+        display: block;
+    }
+
+    #gallery h3 {
+        font-size: 1.5em;
+    }
+
+    #targeta p:nth-child(3) {
+        display: block;
+    }
+}
+
+@media (max-width: 496px) {
+    #entrada h2 {
+        font-size: 1.5em;
+    }
+
+    #entrada p {
+        font-size: 1em;
+    }
+
+    p#big {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 396px) {
+    #baner {
+        background-image: url("/gallery/Design\ sem\ nome\ \(1\).jpg");
+        background-size: cover;
+        background-position: center left;
+        height: 85vh;
+    }
+
+    #entrada h2 {
+        font-size: 1.2em;
+    }
+
+    #entrada p {
+        font-size: .9em;
+    }
+
+    #entrada div {
+        bottom: 16px;
+    }
+
+    div#bottom-baner {
+        display: block;
+        height: 4vh;
+        background-color: #F2EFEC;
+    }
+
+    p#big {
+        font-size: 1.2em;
+    }
+
+    #description h3 {
+        font-size: 1.5em;
+    }
+
+    #minor {
+        font-size: 1.5em;
+    }
+
+    #baner #minor {
+        height: 175px;
+        width: 175px;
+    }
+
+    #entrada div {
+        bottom: 60px;
+    }
+
+    #sobre h1 {
+        font-size: 1.1em;
+    }
+
+    section#contact {
+        background-position-x: 20%;
+    }
+}
+
+@media (max-width: 366px) {
+    #targeta p:nth-child(2) {
+        display: block;
+    }
+
+    #description>div>div {
+        font-size: .9em;
+        margin-left: 0.8em;
+    }
+
+    #contact>div:nth-child(1) {
+        display: none;
+    }
+
+    section#contact>div>div {
+        width: 100vw;
+        background-color: #ffffffb3
+    }
+
+    section#contact p,
+    section#contact h3 {
+        color: var(--color-1);
+
+    }
+
+}

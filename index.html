@@ -7,23 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Lote Lagoa</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="icon.css">
     <link rel="stylesheet" href="background.css">
-
+    <link rel="stylesheet" href="media.css">
     <script src="js.js" defer></script>
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li><a href="#">Vantagens</a></li>
-            <li><a href="gallery.html">Galeria</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Localização</a></li>
-        </ul>
+        <div>
+            <div id="toggle">
+                <div><i id="toggle-off" class="bi bi-list"></i></div>
+                <div style="padding: 0 0.15em;" id="toogle-on" class="none">X</div>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#description">Vantagens</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#location">Localização</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
         <section>
@@ -37,7 +45,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div id="entrada">
                         <div>
                             <h2>LOTEMENTO LAGOA</h2>
@@ -46,12 +53,13 @@
                             <p>Saldo em <span>180 meses</span></p>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div id="bottom-baner" class="none"></div>
             <div id="targeta">
-                <p><span class="bold">Financiamento</span> proprio + Entrada facilitada + Parcelado em <span
-                        class="bold">180 messes</span></p>
+                <p><span class="bold">Financiamento</span> proprio + </p>
+                <p>Entrada facilitada + </p>
+                <p>Parcelado em <span class="bold">180 messes</span></p>
             </div>
         </section>
         <section id="description">
@@ -92,22 +100,22 @@
                     <div><img data-gallery="" src="gallery/img/image-2.jpeg" alt=""></div>
                     <div><img data-gallery="" src="gallery/img/image-3.jpeg" alt=""></div>
                     <div><img data-gallery="" src="gallery/img/image-4.jpeg" alt=""></div>
-
                 </div>
                 <div class="flex">
                     <a href="gallery.html">
                         Ver mais
                         <span><i class="bi bi-forward"></i></span>
                     </a>
-
                 </div>
-
             </div>
         </section>
-        <section id="loteamento">
+        <section id="sobre">
             <div>
                 <h1>SOBRE O LOTEAMENTO</h1>
-                <p>O loteamento estar localizado no trevo do bairro lagoa, com tudo para ser a melhor escolha de quem sonha em ter um lar par chamar de seu, com ruas e avenidas projetadas para o melhor fluxo possivél, a avenida principal (prefeito josé inácio da silva) que corta o loteamento é robusta o suficiente para suportar um fluxo intenso de veiculos e pedestres.</p>
+                <p>O loteamento tem tudo para ser a melhor escolha de quem sonha em ter um lar para chamar de seu, com
+                    ruas e avenidas projetadas para a melhor experiência possível, a avenida principal (prefeito josé
+                    inácio da silva) que corta o loteamento é robusta o suficiente para suportar um fluxo intenso de
+                    veículos e pedestres. Um sistema de águas pluviais que drenará toda a água da chuva. </p>
             </div>
         </section>
         <section id="contact">
@@ -117,8 +125,9 @@
                     <h3>Reserve já o seu lote</h3>
                     <p>Entre em contato</p>
                     <p class="bold" id="phone">(81) 99186-9812</p>
-                    <a class="btn"
-                        href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote.">Iniciar
+                    <a id="btn-contact" class="btn"
+                        href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
+                            class="bi bi-whatsapp"></i>Iniciar
                         conversa</a>
                     <div id="info-contact">
                         <p class="info-contact">Venha morar
@@ -133,9 +142,10 @@
             <div></div>
         </section>
         <div>
-            <i class="bi bi-whatsapp"></i>
+            <a class=""
+                href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
+                    class="bi bi-whatsapp"></i></a>
         </div>
-
         <div id="modal" class="none">
             <div id="modal-src">
                 <span id="exit">x</span>

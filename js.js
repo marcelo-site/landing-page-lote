@@ -5,11 +5,14 @@ const modal = document.querySelector('#modal')
 const body = document.querySelector('body')
 const left = document.querySelector('#left')
 const right = document.querySelector('#right')
-const exit =document.querySelector('#exit')
+const exit = document.querySelector('#exit')
+const toggleOff = document.querySelector('#toggle-off')
+const toggleOn = document.querySelector('#toogle-on')
+const navUl = document.querySelector('nav ul')
 const galleryLength = gallery.length
 
 const imgModal = (arquivo) => {
-    
+
     const ext = arquivo.split('.').pop()
     let cod
 
@@ -39,12 +42,12 @@ gallery.forEach((el, i) => el.addEventListener('click', () => {
         left.setAttribute('style', 'cursor: no-drop; background-color: #f3ebebd1')
     } else if (i === galleryLength - 1) {
         right.setAttribute('style', 'cursor: no-drop; background-color: #f3ebebd1')
-    } 
+    }
     ind = i
     imgModal(arquivo)
 }))
 
-left.addEventListener('click', () => { 
+left.addEventListener('click', () => {
     if (ind === 0) {
         return
     } else if (ind === 1) {
@@ -53,32 +56,51 @@ left.addEventListener('click', () => {
         right.setAttribute('style', '')
     }
 
-   const arquivo =  gallery[ind - 1].getAttribute('src')
-   modalSrc.innerHTML = ''
+    const arquivo = gallery[ind - 1].getAttribute('src')
+    modalSrc.innerHTML = ''
     imgModal(arquivo)
     ind--
 })
 
 right.addEventListener('click', () => {
-    if(ind === galleryLength - 1) {
+    if (ind === galleryLength - 1) {
         return
     } else if (ind === galleryLength - 2) {
         right.setAttribute('style', 'cursor: no-drop; background-color: #f3ebebd1')
     } else {
         left.setAttribute('style', '')
     }
-    const arquivo =  gallery[ind + 1].getAttribute('src')
+    const arquivo = gallery[ind + 1].getAttribute('src')
     modalSrc.innerHTML = ''
-     imgModal(arquivo)
-     ind++
- })
+    imgModal(arquivo)
+    ind++
+})
 
- exit.addEventListener('click', () => {
+exit.addEventListener('click', () => {
     modal.classList.add('none')
     background.classList.add('none')
     body.classList.remove('over-hidden')
     left.setAttribute('style', '')
     right.setAttribute('style', '')
- })
+})
 
- background.addEventListener('click', () => exit.click())
+background.addEventListener('click', () => exit.click())
+
+
+toggleOff.addEventListener('click', () => {
+    toggleOff.classList.add('none')
+    toggleOn.classList.remove('none')
+    background.classList.remove('none')
+    body.classList.add('over-hidden')
+    navUl.setAttribute('style', 'display: block')
+    background.setAttribute('style', 'pointer-events: none')
+})
+
+toggleOn.addEventListener('click', () => {
+    toggleOff.classList.remove('none')
+    toggleOn.classList.add('none')
+    background.classList.add('none')
+    body.classList.remove('over-hidden')
+    navUl.setAttribute('style', 'display: none')
+    background.setAttribute('style', '')
+})

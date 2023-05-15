@@ -1,19 +1,23 @@
 nav {
     height: 50px;
-    width: 90vw;
+    width: 100vw;
     color: var(--color-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 1px 1px 10px #00000050;
 }
 nav li {
     list-style: none;
-    margin: 10px;
-    /* height: 1em; */
-    /* padding: .5em .8em; */
-    border-radius: 5px;
+    margin: 5px;
+    border-radius: 5px
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 nav a {
@@ -27,5 +31,18 @@ nav li:hover {
 }
 
 nav a:hover {
+    color: white;
+}
+
+nav > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1em;
+    margin-top: 0.3em;
+    font-size: 1.5em;
+}
+
+nav > div > div {
+    background-color: var(--color-1);
     color: white;
 }

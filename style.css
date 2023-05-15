@@ -38,18 +38,12 @@ h6 {
     border-radius: 5px;
 }
 
-.btn:hover { 
+.btn:hover {
     background-color: #05550f;
 }
+
 .bold {
     font-weight: bold;
-}
-
-#baner {
-    background-image: url("/gallery/baner-lote.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
 }
 
 #minor {
@@ -119,8 +113,8 @@ p#big {
 
 #entrada div {
     position: absolute;
-    bottom: 20px;
-    right: 10%;
+    bottom: 0px;
+    right: 8%;
 }
 
 #targeta {
@@ -130,14 +124,11 @@ p#big {
     color: white
 }
 
-.bi-check-lg  {
-    margin: .5em;
-    color: white;
-    background-color: #0aff0a;
-    border-radius: 50%;
+#targeta p {
+    display: contents;
 }
 
-p span.bi-check-lg  {
+p span.bi-check-lg {
     margin: 3em;
     font-size: 1em;
 }
@@ -149,6 +140,7 @@ p span.bi-check-lg  {
 #description p {
     margin: .5em;
 }
+
 #description>div:nth-child(1) {
     flex: 1.5;
 }
@@ -170,6 +162,7 @@ p span.bi-check-lg  {
 
 #description img {
     width: 100%;
+    height: 100%;
 }
 
 #description h3 {
@@ -200,7 +193,7 @@ p span.bi-check-lg  {
     margin: 1em auto;
 }
 
-#gallery > div > span {
+#gallery>div>span {
     width: 100vw;
     display: block;
     text-align: center;
@@ -222,10 +215,11 @@ section#contact {
     background-image: url("gallery/pexels-anton-4132538.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     height: 400px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-top: 3em;
 }
 
 section#contact p,
@@ -237,15 +231,16 @@ section#contact h3 {
     font-weight: bold;
 }
 
-section#contact > div {
+section#contact>div {
     color: var(--color-1);
     height: 100%;
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
 }
 
-section#contact > div > div {
-    margin-top: 2em;
+section#contact>div>div {
+    padding-top: 2em;
+    height: 100%;
 }
 
 section#contact #phone {
@@ -253,6 +248,7 @@ section#contact #phone {
     margin: 1em auto;
     color: var(--color-1);
 }
+
 div#info-contact {
     margin-top: 2em;
 }
@@ -273,7 +269,7 @@ section#contact>div p.info-contact {
     border-top: 0;
 }
 
-#location >div>div {
+#location>div>div {
     color: transparent;
     height: 100%;
 }
@@ -284,9 +280,6 @@ section#contact>div p.info-contact {
     text-align: center;
     font-size: 2em;
 }
-
-
-
 
 section div img,
 section div video {
@@ -299,11 +292,20 @@ video {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 video::after {
     content: "\f149";
 }
 
 .none {
     display: none;
+}
+
+#sobre h1 {
+    text-align: center;
+    margin-bottom: 1em
+}
+
+#sobre p {
+    text-align: justify;
+    margin: 1em;
 }
