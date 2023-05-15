@@ -49,3 +49,16 @@ video::after {
 .none {
     display: none;
 }
+
+@media (max-width: 566px) {
+  section div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 366px) {
+    section div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
