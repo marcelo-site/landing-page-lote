@@ -7,7 +7,7 @@
 
 @media (min-width: 666px) {
     #baner {
-        background-image: url("/gallery/baner-lote\ \(1\).jpg");
+        background-image: url("/gallery/baner-lote.jpg");
         background-size: cover;
         background-position: center left;
         height: 100vh;
@@ -86,7 +86,7 @@
 
 @media (max-width: 396px) {
     #baner {
-        background-image: url("/gallery/Design\ sem\ nome\ \(1\).jpg");
+        background-image: url("/gallery/baner-phone.jpg");
         background-size: cover;
         background-position: center left;
         height: 85vh;
