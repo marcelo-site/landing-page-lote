@@ -48,7 +48,6 @@ left.addEventListener('click', () => {
     } else if (ind === galleryLength - 1) {
         right.setAttribute('style', '')
     }
-
     const arquivo = gallery[ind - 1].getAttribute('src')
     modalSrc.innerHTML = ''
     imgModal(arquivo)
