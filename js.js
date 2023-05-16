@@ -11,7 +11,7 @@ const galleryLength = gallery.length
 const imgModal = (arquivo) => {
     const ext = arquivo.split('.').pop()
     let cod
-    if (ext === 'jpeg') {
+    if (ext === 'webp') {
         const img = document.createElement('img')
         img.setAttribute('src', arquivo)
         cod = img
