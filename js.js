@@ -1,6 +1,6 @@
 const gallery = document.querySelectorAll('[data-gallery=""]')
 const modalSrc = document.querySelector('#modal-src div')
-const background = document.querySelector('#background')
+const background2 = document.querySelector('#background2')
 const modal = document.querySelector('#modal')
 const body = document.querySelector('body')
 const left = document.querySelector('#left')
@@ -23,7 +23,7 @@ const imgModal = (arquivo) => {
         video.setAttribute('controls', true)
         cod = video
     }
-    background.classList.remove('none')
+    background2.classList.remove('none')
     modal.classList.remove('none')
     body.classList.add('over-hidden')
     modalSrc.appendChild(cod)
@@ -68,9 +68,8 @@ right.addEventListener('click', () => {
 })
 exit.addEventListener('click', () => {
     modal.classList.add('none')
-    background.classList.add('none')
+    background2.classList.add('none')
     body.classList.remove('over-hidden')
     left.setAttribute('style', '')
     right.setAttribute('style', '')
 })
-background.addEventListener('click', () => exit.click())
