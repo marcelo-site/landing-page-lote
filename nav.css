@@ -42,7 +42,23 @@ nav > div:nth-child(1) {
     font-size: 1.5em;
 }
 
-nav > div > div {
+nav > div > div div {
+    font-size: 1.1em;
+    margin-left: 0.2em;
     background-color: var(--color-1);
     color: white;
+}
+
+div#toggle span {
+    margin-top: 0.1em;
+    font-size: .9em;
+}
+
+header > div {
+    font-size: 1.5em;
+    z-index: 110;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    color: var(--color-1);
 }

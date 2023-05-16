@@ -20,7 +20,6 @@ section {
 body {
     margin: 0 3px;
     overflow-x: hidden;
-    
 }
 
 a {
@@ -297,10 +296,6 @@ video {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-video::after {
-    content: "\f149";
-}
-
 .none {
     display: none;
 }
@@ -313,4 +308,91 @@ video::after {
 #sobre p {
     text-align: justify;
     margin: 1em;
+    line-height: 1.5em; 
+}
+
+section#institucional {
+    margin: 2em 1em 5em;
+    color: var(--color-1);
+}
+
+section#institucional h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section#institucional > div {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+section#institucional #logo-venda div:nth-child(1) p {
+    height: 175px;
+    background-color: #cfceceb5;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+section#institucional > div > div > div {
+    text-align: center;
+}
+
+section#institucional #logo-venda i{
+    font-size: 1.5em;
+}
+
+section#institucional #logo-venda p{
+    margin: .6em 0;
+}
+
+section#institucional > div > div:nth-child(2) {
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section#institucional > div > div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+}
+
+section#institucional > div > div > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+}
+
+#sociais > div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+#institucional i {
+    color: var(--color-3);
+}
+
+#sociais i {
+    color: var(--color-3);
+}
+
+footer {
+    text-align: center;
+    background-color: #414242;
+    color: white;
+    padding: .8em;
+}
+
+footer a {
+    color: var(--color-2);
 }

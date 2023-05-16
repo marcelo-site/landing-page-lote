@@ -82,6 +82,13 @@
     p#big {
         font-size: 1.5em;
     }
+    /* img-small-none */
+    section#institucional > div > div:nth-child(2) {
+        display: none;
+    }
+    section#institucional > div {
+        display: block;
+    }
 }
 
 @media (max-width: 396px) {
@@ -145,10 +152,10 @@
         display: block;
     }
 
-    #description>div>div {
+    /* #description>div>div {
         font-size: .9em;
         margin-left: 0.8em;
-    }
+    } */
 
     #contact>div:nth-child(1) {
         display: none;
