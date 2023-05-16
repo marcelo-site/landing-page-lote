@@ -296,6 +296,10 @@ video {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.block {
+    display: block;
+}
+
 .none {
     display: none;
 }
@@ -342,7 +346,7 @@ section#institucional > div > div > div {
 }
 
 section#institucional #logo-venda i{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 section#institucional #logo-venda p{
@@ -374,7 +378,7 @@ section#institucional > div > div > div > div{
 #sociais > div {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1em;
     margin-bottom: 1em;
 }
 

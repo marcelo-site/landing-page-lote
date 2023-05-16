@@ -1,6 +1,5 @@
 @media (max-width:796px) {
     #entrada div {
-        /* bottom: -30px; */
         right: 3%;
     }
 }
@@ -82,11 +81,12 @@
     p#big {
         font-size: 1.5em;
     }
-    /* img-small-none */
-    section#institucional > div > div:nth-child(2) {
+
+    section#institucional>div>div:nth-child(2) {
         display: none;
     }
-    section#institucional > div {
+
+    section#institucional>div {
         display: block;
     }
 }
@@ -138,10 +138,6 @@
         bottom: 60px;
     }
 
-    #sobre h1 {
-        font-size: 1.1em;
-    }
-
     section#contact {
         background-position-x: 20%;
     }
@@ -151,11 +147,6 @@
     #targeta p:nth-child(2) {
         display: block;
     }
-
-    /* #description>div>div {
-        font-size: .9em;
-        margin-left: 0.8em;
-    } */
 
     #contact>div:nth-child(1) {
         display: none;
@@ -171,5 +162,4 @@
         color: var(--color-1);
 
     }
-
 }

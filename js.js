@@ -6,17 +6,11 @@ const body = document.querySelector('body')
 const left = document.querySelector('#left')
 const right = document.querySelector('#right')
 const exit = document.querySelector('#exit')
-const toggleOff = document.querySelector('#toggle-off')
-const toggleOn = document.querySelector('#toogle-on')
-const navUl = document.querySelector('nav ul')
-
 const galleryLength = gallery.length
 
 const imgModal = (arquivo) => {
-
     const ext = arquivo.split('.').pop()
     let cod
-
     if (ext === 'jpeg') {
         const img = document.createElement('img')
         img.setAttribute('src', arquivo)
@@ -34,7 +28,6 @@ const imgModal = (arquivo) => {
     body.classList.add('over-hidden')
     modalSrc.appendChild(cod)
 }
-
 let ind
 gallery.forEach((el, i) => el.addEventListener('click', () => {
     const arquivo = el.getAttribute('src')
@@ -47,7 +40,6 @@ gallery.forEach((el, i) => el.addEventListener('click', () => {
     ind = i
     imgModal(arquivo)
 }))
-
 left.addEventListener('click', () => {
     if (ind === 0) {
         return
@@ -62,7 +54,6 @@ left.addEventListener('click', () => {
     imgModal(arquivo)
     ind--
 })
-
 right.addEventListener('click', () => {
     if (ind === galleryLength - 1) {
         return
@@ -76,7 +67,6 @@ right.addEventListener('click', () => {
     imgModal(arquivo)
     ind++
 })
-
 exit.addEventListener('click', () => {
     modal.classList.add('none')
     background.classList.add('none')
@@ -84,36 +74,4 @@ exit.addEventListener('click', () => {
     left.setAttribute('style', '')
     right.setAttribute('style', '')
 })
-
 background.addEventListener('click', () => exit.click())
-
-
-toggleOff.addEventListener('click', () => {
-    toggleOff.classList.add('none')
-    toggleOn.classList.remove('none')
-    background.classList.remove('none')
-    body.classList.add('over-hidden')
-    navUl.setAttribute('style', 'display: block')
-    background.setAttribute('style', 'pointer-events: none')
-})
-
-toggleOn.addEventListener('click', () => {
-    toggleOff.classList.remove('none')
-    toggleOn.classList.add('none')
-    background.classList.add('none')
-    body.classList.remove('over-hidden')
-    navUl.setAttribute('style', 'display: none')
-    background.setAttribute('style', '')
-})
-
-function a() {
-    const li = document.querySelectorAll('nav ul li')
-    let largura = window.screen.width;
-    if (largura < 666) {
-        li.forEach(el => el.addEventListener('click', () => toggleOn.click()))
-        console.log(1)
-    }
-}
-a()
-
-
