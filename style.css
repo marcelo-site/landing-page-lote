@@ -263,8 +263,10 @@ section#contact>div p.info-contact {
 
 #location {
     margin-top: 3em;
-    background-image: url("gallery/1.webp");
+    background-image: url(gallery/1.webp);
     height: 350px;
+    background-size: cover;
+    background-position-x: 30%;
 }
 
 #location>div {
