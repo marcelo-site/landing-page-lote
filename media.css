@@ -101,7 +101,7 @@
 
 @media (max-width: 396px) {
     #baner {
-        background-image: url("gallery/baner-phone.webp");
+        background-image: url("gallery/baner-small.webp");
         background-size: cover;
         background-position: center left;
         height: 85vh;
