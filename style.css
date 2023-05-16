@@ -400,3 +400,8 @@ footer {
 footer a {
     color: var(--color-2);
 }
+
+#modal.modal-index {
+    margin-top: 40px;
+    height: 90vh;
+}
