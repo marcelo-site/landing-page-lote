@@ -81,6 +81,7 @@
     p#big {
         font-size: 1.5em;
     }
+
     #gallery>div>div {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -96,14 +97,10 @@
     section#institucional>div {
         display: block;
     }
-
 }
 
 @media (max-width: 396px) {
     #baner {
-        background-image: url("gallery/baner-small.webp");
-        background-size: cover;
-        background-position: center left;
         height: 85vh;
     }
 
