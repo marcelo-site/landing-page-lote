@@ -81,6 +81,13 @@
     p#big {
         font-size: 1.5em;
     }
+    #gallery>div>div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #gallery img {
+        height: 48vw;
+    }
 
     section#institucional>div>div:nth-child(2) {
         display: none;
@@ -89,6 +96,7 @@
     section#institucional>div {
         display: block;
     }
+
 }
 
 @media (max-width: 396px) {
