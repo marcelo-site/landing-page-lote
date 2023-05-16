@@ -30,14 +30,14 @@ const imgModal = (arquivo) => {
 }
 let ind
 gallery.forEach((el, i) => el.addEventListener('click', () => {
+    modalSrc.innerHTML = ''
     const arquivo = el.getAttribute('src')
-    console.log(i === galleryLength - 1)
+    ind = i
     if (i === 0) {
         left.setAttribute('style', 'cursor: no-drop; background-color: #f3ebebd1')
     } else if (i === galleryLength - 1) {
         right.setAttribute('style', 'cursor: no-drop; background-color: #f3ebebd1')
     }
-    ind = i
     imgModal(arquivo)
 }))
 left.addEventListener('click', () => {
