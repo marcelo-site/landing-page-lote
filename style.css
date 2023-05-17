@@ -6,6 +6,10 @@
     --color-5: #008F13;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     scroll-margin-top: 55px;
 }
@@ -35,21 +39,6 @@ h6 {
     color: var(--color-1);
 }
 
-.btn {
-    padding: .5em .8em;
-    background-color: var(--color-5);
-    color: white;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #05550f;
-}
-
-.bold {
-    font-weight: bold;
-}
-
 #minor {
     color: white;
     font-size: 1.8em;
@@ -68,15 +57,11 @@ h6 {
 #baner>div {
     display: flex;
     flex-direction: column;
-
 }
 
 #baner>div>div {
     padding-top: 20%;
     height: 100%;
-}
-
-#baner>div>div {
     display: inline-block;
     margin: auto;
 }
@@ -263,7 +248,7 @@ section#contact>div p.info-contact {
 
 #location {
     margin-top: 3em;
-    background-image: url(gallery/1.webp);
+    background-image: url("gallery/1.webp");
     height: 350px;
     background-size: cover;
     background-position-x: 30%;
@@ -294,16 +279,7 @@ section div video {
 }
 
 video {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.block {
-    display: block;
-}
-
-.none {
-    display: none;
+    background-color: rgb(255 255 255 / 50%);
 }
 
 #sobre h1 {
@@ -406,4 +382,27 @@ footer a {
 #modal.modal-index {
     margin-top: 40px;
     height: 90vh;
+}
+
+.btn {
+    padding: .5em .8em;
+    background-color: var(--color-5);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #05550f;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
 }
