@@ -337,7 +337,7 @@ section#contact>div p.info-contact {
 
 #location>div {
     height: calc(100% - 3.9em);
-    border: 3em solid #db7a16b5;
+    border: 2.5em solid #db7a16b5;
     border-top: 0;
     font-weight: bold;
 }
