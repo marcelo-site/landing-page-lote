@@ -45,7 +45,7 @@
         <section>
             <div id="baner">
                 <div>
-                    <div id="">
+                    <div>
                         <div id="minor">
                             <p>a partir de
                                 <span>199,00</span> mensais
@@ -109,9 +109,10 @@
                     <div><img data-gallery="" src="gallery/img/image-4.webp" alt=""></div>
                 </div>
                 <div class="flex">
+
                     <a class="btn" href="gallery.html">
+                        <span><i class="bi bi-images"></i></span>
                         Ver mais
-                        <span><i class="bi bi-forward"></i></span>
                     </a>
                 </div>
             </div>
@@ -127,53 +128,51 @@
         </section>
         <section id="price">
             <div>
-                <h2>ALGUNS PREÇOS</h3>
-                    <div style="overflow-x: auto;">
-                        <div style="min-width: 450px;" id="table-price">
-                            <div>
-                                <span class="bold">Localização</span>
-                                <span class="bold">Medida</span>
-                                <span class="bold">Preço</span>
-                                <span class="bold" style="display: block;">
-                                    Parcelado
-                                    <form>
-                                        <select name="parc" id="">
-                                            <option value="100">100x</option>
-                                            <option value="50">50x</option>
-                                            <option value="10">10x</option>
-                                        </select>
-                                    </form>
-                                </span>
-                            </div>
-                            <div>
-                                <span>De esquina</span>
-                                <span>100 m<sup>2</sup></span>
-                                <span data-value="">R$ 20.000,00</span>
-                                <span data-parc="">R$ 200,00</span>
-                            </div>
-                            <div>
-                                <span>Sem esquina</span>
-                                <span>100 m<sup>2</sup></span>
-                                <span data-value="">R$ 10.000,00</span>
-                                <span data-parc="">R$ 100,00</span>
-                            </div>
-                            <div>
-                                <span>Na Av. projetada</span>
-                                <span>100 m<sup>2</sup></span>
-                                <span data-value="">R$ 30.000,00</span>
-                                <span data-parc="">R$ 300,00</span>
-                            </div>
-                            <div>
-                                <span>Na Av. projetada de esquina</span>
-                                <span>100 m<sup>2</sup></span>
-                                <span data-value="">R$ 30.000,00</span>
-                                <span data-parc="">R$ 300,00</span>
-                            </div>
+                <h2>ALGUNS PREÇOS</h2>
+                <div style="overflow-x: auto;">
+                    <div style="min-width: 450px;" id="table-price">
+                        <div>
+                            <span class="bold">Localização</span>
+                            <span class="bold">Medida</span>
+                            <span class="bold">Preço</span>
+                            <span class="bold" style="display: block;">
+                                Parcelado
+                                <select name="parc">
+                                    <option value="100">100x</option>
+                                    <option value="50">50x</option>
+                                    <option value="10">10x</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div>
+                            <span>De esquina</span>
+                            <span>100 m<sup>2</sup></span>
+                            <span data-value="">R$ 20.000,00</span>
+                            <span data-parc="">R$ 200,00</span>
+                        </div>
+                        <div>
+                            <span>Sem esquina</span>
+                            <span>100 m<sup>2</sup></span>
+                            <span data-value="">R$ 10.000,00</span>
+                            <span data-parc="">R$ 100,00</span>
+                        </div>
+                        <div>
+                            <span>Na Av. projetada</span>
+                            <span>100 m<sup>2</sup></span>
+                            <span data-value="">R$ 30.000,00</span>
+                            <span data-parc="">R$ 300,00</span>
+                        </div>
+                        <div>
+                            <span>Na Av. projetada de esquina</span>
+                            <span>100 m<sup>2</sup></span>
+                            <span data-value="">R$ 30.000,00</span>
+                            <span data-parc="">R$ 300,00</span>
                         </div>
                     </div>
-                    <div style="font-size: .8em; margin-top: .5em;">
-                        <p>Para mais informações entre em contato</p>
-                    </div>
+                </div>
+                <div style="font-size: .8em; margin-top: .5em;">
+                    <p>Para mais informações entre em contato</p>
+                </div>
             </div>
         </section>
         <section id="contact">
@@ -202,9 +201,7 @@
                     <p>COMO CHEGAR?</p>
                     <!-- <a href="https://www.google.pt/maps?q=-8.1421092,-36.3783963" target="_blank">Clique Aqui.</a> -->
 
-                    <a 
-                    href="https://goo.gl/maps/zzwHiCyXSJhXRCZ68" 
-                    target="_blank">Clique Aqui.</a>
+                    <a href="https://goo.gl/maps/zzwHiCyXSJhXRCZ68" target="_blank">Clique Aqui.</a>
                 </div>
             </div>
         </section>
@@ -248,7 +245,6 @@
     <footer>
         <p>Feito por <a href="">Marcelo</a> &copy; 2023</p>
     </footer>
-
     <div>
         <a class=""
             href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
@@ -257,10 +253,9 @@
     <div id="modal" class="none modal-index">
         <div id="modal-src">
             <span id="exit">x</span>
-            <span id="left">
-                < </span>
-                    <div></div>
-                    <span id="right">></span>
+            <span id="left">&lt;</span>
+            <div></div>
+            <span id="right">></span>
         </div>
     </div>
     <div id="background1" class="background none"></div>

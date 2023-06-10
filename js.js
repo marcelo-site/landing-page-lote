@@ -9,7 +9,7 @@ const exit = document.querySelector('#exit')
 const galleryLength = gallery.length
 const price = document.querySelectorAll('[data-value]')
 const parc = document.querySelectorAll('[data-parc]')
-const form = document.querySelector('form')
+const select = document.querySelector('select')
 
 const imgModal = (arquivo) => {
     const ext = arquivo.split('.').pop()
@@ -76,16 +76,15 @@ exit.addEventListener('click', () => {
     left.setAttribute('style', '')
     right.setAttribute('style', '')
 })
-
-form.parentNode.addEventListener('change', () => {
-    const periodo = Number(form.parc.value)
+select.addEventListener('change', () => {
+    const periodo = Number(select.value)
     price.forEach((el, i) => {
         const priceDivido = el.innerHTML.replace('R$ ', '')
             .replace('.', '').replace(',00', '')
             / periodo
         let price = priceDivido
-        .toString()
-        .split('')
+            .toString()
+            .split('')
         let priceBR = parseFloat(price.join().replace(/\,/g, ''))
 
         parc[i].innerHTML = `${priceBR.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`
