@@ -54,7 +54,7 @@
                     </div>
                     <div id="entrada">
                         <div>
-                            <h2>LOTEMENTO LAGOA</h2>
+                            <h2>LOTEAMENTO MARIA TAVARES</h2>
                             <p>Terrenos a partir de 200m <sup style="margin: -4px">2</sup></p>
                             <p id="big">Entrada em <span>10x</span></p>
                             <p>Saldo em <span>180 meses</span></p>
@@ -95,7 +95,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="fle">
                 <img src="gallery/couple-holding-small-house-medium-shot.webp" alt="">
             </div>
         </section>
@@ -125,6 +125,55 @@
                     veículos e pedestres. Um sistema de águas pluviais que drenará toda a água da chuva. </p>
             </div>
         </section>
+        <section id="price">
+            <div>
+                <h2>ALGUNS PREÇOS</h3>
+                    <div style="overflow-x: auto;">
+                        <div style="min-width: 450px;" id="table-price">
+                            <div>
+                                <span class="bold">Localização</span>
+                                <span class="bold">Medida</span>
+                                <span class="bold">Preço</span>
+                                <span class="bold">
+                                    Parcelado
+                                    <form action="">
+                                        <select name="parc" id="">
+                                            <option value="100">100x</option>
+                                            <option value="50">50x</option>
+                                            <option value="10">10x</option>
+                                        </select>
+                                    </form>
+                                </span>
+                            </div>
+                            <div>
+                                <span>De esquina</span>
+                                <span>100 m<sup>2</sup></span>
+                                <span data-value="">R$ 20.000,00</span>
+                                <span data-parc="">R$ 200,00</span>
+                            </div>
+                            <div>
+                                <span>Sem esquina</span>
+                                <span>100 m<sup>2</sup></span>
+                                <span data-value="">R$ 10.000,00</span>
+                                <span data-parc="">R$ 100,00</span>
+                            </div>
+                            <div>
+                                <span>Na Av. projetada</span>
+                                <span>100 m<sup>2</sup></span>
+                                <span data-value="">R$ 30.000,00</span>
+                                <span data-parc="">R$ 300,00</span>
+                            </div>
+                            <div>
+                                <span>Na Av. projetada de esquina</span>
+                                <span>100 m<sup>2</sup></span>
+                                <span data-value="">R$ 30.000,00</span>
+                                <span data-parc="">R$ 300,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Para mais valores e informação entre em contato</p>
+            </div>
+        </section>
         <section id="contact">
             <div></div>
             <div>
@@ -146,62 +195,73 @@
         </section>
         <section id="location">
             <h3>LOCALIZAÇÂO</h3>
-            <div></div>
-        </section>
-        <div>
-            <a class=""
-                href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
-                    class="bi bi-whatsapp"></i></a>
-        </div>
-        <div id="modal" class="none modal-index">
-            <div id="modal-src">
-                <span id="exit">x</span>
-                <span id="left">
-                    < </span>
-                        <div></div>
-                        <span id="right">></span>
+            <div class="flex">
+                <div class="flex">
+                    <p>COMO CHEGAR?</p>
+                    <a href="https://goo.gl/maps/8tvbmPsBAd5zeyAk8" target="_blank">Clique Aqui.
+                    </a>
+                </div>
             </div>
-        </div>
-        <div id="background1" class="background none"></div>
-        <div id="background2" class="background none"></div>
-    </main>
-    <section id="institucional">
-        <div>
+            <!-- <p>A Localização é aproximada, indica o inicio do loteamento as margens da PE-145</p> -->
+            <!-- <div>
+                
+            </div> -->
+        </section>
+
+        <section id="institucional">
             <div>
-                <h2>Administração e Plantão de Vendas:</h2>
                 <div>
-                    <div id="logo-venda">
-                        <div>
-                            <p>Venda</p>
-                        </div>
-                        <div id="sociais">
-                            <p class="bold">Redes Sociais</p>
-                            <div><a href="https://www.facebook.com/profile.php?id=100015225941991" target="_blank">
-                                    <i style="margin-right: -20%;" class="bi bi-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/marcelosouza5224/" target="_blank">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
+                    <h2>Administração e Plantão de Vendas:</h2>
+                    <div>
+                        <div class="flex" id="logo-venda">
+                            <div>
+                                <p class="flex">Venda</p>
+                            </div>
+                            <div id="sociais">
+                                <p class="bold">Redes Sociais</p>
+                                <div><a href="https://www.facebook.com/profile.php?id=100015225941991" target="_blank">
+                                        <i style="margin-right: -20%;" class="bi bi-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/marcelosouza5224/" target="_blank">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div style="color: black">
-                        <p><i class="bi bi-telephone-fill"></i> (81) 99999-9999</p>
-                        <p><i class="bi bi-geo-alt-fill"></i> Rua juscelino nunes oliveira, 230 <br> 
-                            Bairo Dona Lica 1 - PE</p>
+                        <div style="color: black">
+                            <p><i class="bi bi-telephone-fill"></i> (81) 99999-9999</p>
+                            <p><i class="bi bi-geo-alt-fill"></i> Rua juscelino nunes oliveira, 230 <br>
+                                Bairo Dona Lica 1 - PE</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="img-small-none">
-                <div>
+                <div id="img-small-none">
                     <div>
-                        <img src="gallery/couple-moving-new-house.webp" alt="">
+                        <div>
+                            <img src="gallery/couple-moving-new-house.webp" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </main>
+    <div>
+        <a class=""
+            href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
+                class="bi bi-whatsapp"></i></a>
+    </div>
+    <div id="modal" class="none modal-index">
+        <div id="modal-src">
+            <span id="exit">x</span>
+            <span id="left">
+                < </span>
+                    <div></div>
+                    <span id="right">></span>
+        </div>
+    </div>
+    <div id="background1" class="background none"></div>
+    <div id="background2" class="background none"></div>
     <footer>
         <p>Feito por <a href="">Marcelo</a> &copy; 2023</p>
     </footer>
