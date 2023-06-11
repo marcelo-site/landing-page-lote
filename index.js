@@ -21,7 +21,7 @@ const heigth = window.screen.height
 
 window.addEventListener('scroll', () => {
     const scroll = window.scrollY
-    if ( scroll < heigth - 100) {
+    if ( scroll < heigth - 150) {
         topo.classList.add('none')
     } else {
         topo.classList.remove('none')
