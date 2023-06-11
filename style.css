@@ -323,16 +323,14 @@ section#contact>div p.info-contact {
 }
 
 #location {
-    margin-top: 3em;
+    margin-top: 4em;
     color: var(--color-1);
-    background-image: url("gallery/1.webp");
-    height: 350px;
+    background-image: url("gallery/serra.webp");
     background-size: cover;
-    background-position-x: 30%;
 }
 
 #location>div {
-    height: calc(100% - 3.9em);
+    height: calc(100% - 3em);
     border: 2.5em solid #db7a16b5;
     border-top: 0;
     font-weight: bold;
@@ -361,10 +359,10 @@ section#contact>div p.info-contact {
 }
 
 #location h3 {
-    padding: 0.4em 0;
+    padding: 0.2em 0;
     background-color: #db7a16b5;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 section div img,
@@ -389,7 +387,7 @@ video {
 }
 
 section#institucional {
-    margin: 2em 1em 5em;
+    margin: 3.5em 1em 5em;
     color: var(--color-1);
 }
 
@@ -476,7 +474,7 @@ footer a {
 #top {
     transform: rotate(90deg);
     position: fixed;
-    bottom: 40px;
+    bottom: 38px;
     right: 10px;
     padding: 12px 15px;
     background-color: #000000a1;

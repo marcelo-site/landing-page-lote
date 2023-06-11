@@ -6,7 +6,7 @@
 
 @media (min-width: 666px) {
     #baner {
-        background-image: url("gallery/baner-lote.webp");
+        background-image: url("gallery/baner.webp");
         background-size: cover;
         background-position: center left;
         height: 100vh;
@@ -15,15 +15,31 @@
     #toggle {
         display: none;
     }
+    #location {
+        background-position: 50% 55%;
+        height: 500px;
+    }
+    #location h3 {
+        font-size: 2em;
+        padding: .3em;
+    }
+    #location>div{
+        height: calc(100% - 3.5em);
+    }
 }
 
 @media (max-width:665px) {
     #baner {
-        background-image: url("gallery/baner-small.webp");
+        background-image: url("gallery/baner-2.webp");
         background-size: cover;
-        background-position: center left;
+        background-position: 25% 50%;
         height: 100vh;
     }
+    #location {
+        background-position: 50% 80%;
+        height: 350px;
+    }
+    
 
     #description>div:nth-child(2) {
         display: flex;
