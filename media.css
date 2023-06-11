@@ -37,6 +37,7 @@
     }
 
     #toggle {
+        margin-top: 10px;
         display: flex;
     }
 
@@ -47,7 +48,7 @@
         left: 15vw;
         height: calc(100vh - 50px);
         width: 85vw;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     nav ul li {
@@ -100,6 +101,9 @@
 }
 
 @media (max-width: 396px) {
+    header > div span {
+        font-size: .7em;
+    }
     #baner {
         height: 85vh;
     }
