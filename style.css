@@ -11,7 +11,7 @@ html {
 }
 
 section {
-    scroll-margin-top: 55px;
+    scroll-margin-top: 75px;
 }
 
 * {
@@ -205,14 +205,6 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#table-price div:not(#table-price div:nth-child(1)) {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* color: var(--color-1);
-    font-size: 2.2em; */
 }
 
 #table-price div:nth-child(odd) {
