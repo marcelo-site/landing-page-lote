@@ -109,13 +109,13 @@ p#big {
 
 #entrada h2 {
     color: var(--color-1);
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 #entrada div {
     position: absolute;
-    bottom: 0px;
-    right: 8%;
+    bottom: 1%;
+    right: 1%;
 }
 
 #targeta {
@@ -359,7 +359,7 @@ section#contact>div p.info-contact {
 }
 
 #location h3 {
-    padding: 0.2em 0;
+    padding: 0.3em 0;
     background-color: #db7a16b5;
     text-align: center;
     font-size: 1.8em;
@@ -477,7 +477,7 @@ footer a {
     bottom: 38px;
     right: 10px;
     padding: 12px 15px;
-    background-color: #000000a1;
+    background-color: #0000008f;
     border-radius: 5px;
     font-size: 1.5em;
 }

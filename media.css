@@ -1,9 +1,3 @@
-@media (max-width:796px) {
-    #entrada div {
-        right: 3%;
-    }
-}
-
 @media (min-width: 666px) {
     #baner {
         background-image: url("gallery/baner.webp");
