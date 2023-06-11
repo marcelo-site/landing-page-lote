@@ -235,6 +235,10 @@ select {
     border-left: none;
 }
 
+#table-price sup {
+    margin-bottom: 10px;
+}
+
 #gallery {
     margin: 0 0.3em;
     max-width: 1100px;
