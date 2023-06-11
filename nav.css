@@ -1,14 +1,11 @@
 nav {
-    height: 64px;
+    height: 56px;
     width: 100vw;
-    position: fixed;
     color: var(--color-1);
-    top: 0;
-    left: 0;
     background-color: white;
-    z-index: 100;
     box-shadow: 1px 1px 10px #00000050;
 }
+
 nav li {
     list-style: none;
     margin-top: 5px;
@@ -34,7 +31,7 @@ nav a:hover {
     color: white;
 }
 
-nav > div:nth-child(1) {
+nav>div:nth-child(1) {
     display: flex;
     justify-content: flex-end;
     margin-right: 1em;
@@ -42,7 +39,7 @@ nav > div:nth-child(1) {
     font-size: 1.5em;
 }
 
-nav > div > div div {
+nav>div>div div {
     font-size: 1.1em;
     margin-left: 0.2em;
     background-color: var(--color-1);
@@ -54,7 +51,7 @@ div#toggle span {
     font-size: .9em;
 }
 
-header > div {
+header>div {
     font-size: 1.5em;
     z-index: 110;
     position: fixed;
@@ -63,7 +60,7 @@ header > div {
     color: var(--color-1);
 }
 
-header > div span {
+header>div span {
     display: inline-block;
     font-size: .9em;
     margin-left: -3px;

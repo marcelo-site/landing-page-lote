@@ -10,6 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    position: fixed;
+    top: -8px;
+    left: 0;
+    z-index: 100;
+}
 section {
     scroll-margin-top: 75px;
 }
