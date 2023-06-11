@@ -481,6 +481,21 @@ footer a {
     color: var(--color-2);
 }
 
+#top {
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    padding: 12px 15px;
+    background-color: #000000a1;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+#top a {
+    color: white;
+}
+
 #modal.modal-index {
     margin-top: 40px;
     height: 90vh;
@@ -508,3 +523,4 @@ footer a {
 .none {
     display: none;
 }
+

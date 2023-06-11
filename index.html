@@ -7,19 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Lote Lagoa</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="icon.css">
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="media.css">
-    <script src="js.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="gallery.js" defer></script>
     <script src="nav.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="bold">
-            LOGO
+            <span><img style="height: 50px;" src="gallery/logo.webp" alt="logo"></span>
+            <span>LOTEAMENTO <br> MARIA TAVARES</span>
         </div>
         <nav>
             <div>
@@ -246,9 +249,11 @@
         <p>Feito por <a href="">Marcelo</a> &copy; 2023</p>
     </footer>
     <div>
-        <a class=""
-            href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote."><i
-                class="bi bi-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5581991869812&text=Olá,%20tenho%20interesse%20em%20adiquirir%20um%20lote.">
+            <i class="bi bi-whatsapp"></i></a>
+    </div>
+    <div id="top" class="none">
+        <a href="#">&lt;</a>
     </div>
     <div id="modal" class="none modal-index">
         <div id="modal-src">

@@ -1,5 +1,5 @@
 nav {
-    height: 50px;
+    height: 70px;
     width: 100vw;
     color: var(--color-1);
     position: fixed;
@@ -17,7 +17,7 @@ nav li {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 
 nav a {
@@ -58,7 +58,13 @@ header > div {
     font-size: 1.5em;
     z-index: 110;
     position: fixed;
-    top: 2%;
+    top: 1%;
     left: 2%;
     color: var(--color-1);
+}
+
+header > div span {
+    display: inline-block;
+    font-size: .9em;
+    margin-left: -2px;
 }
