@@ -16,6 +16,12 @@ header {
     left: 0;
     z-index: 100;
 }
+
+header h2 {
+    font-size: .8em;
+    position: fixed;
+    top: 0.7em;
+}
 section {
     scroll-margin-top: 75px;
 }
