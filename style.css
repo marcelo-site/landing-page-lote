@@ -21,6 +21,7 @@ header h2 {
     font-size: .8em;
     position: fixed;
     top: 0.7em;
+    line-height: 1em;
 }
 section {
     scroll-margin-top: 75px;
