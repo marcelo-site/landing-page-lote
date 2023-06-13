@@ -82,7 +82,7 @@
 
 @media (max-width: 496px) {
     header h2 {
-        font-size: .5em;
+        /* font-size: .5em; */
         /* line-height: 1em; */
     }
     #entrada h2 {
