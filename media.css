@@ -130,12 +130,6 @@
         bottom: 16px;
     }
 
-    div#bottom-baner {
-        display: block;
-        height: 4vh;
-        background-color: #F2EFEC;
-    }
-
     p#big {
         font-size: 1.2em;
     }
@@ -155,7 +149,6 @@
 
     #entrada div {
         font-size: 1.2em;
-        bottom: 40px;
     }
 
     section#contact {
