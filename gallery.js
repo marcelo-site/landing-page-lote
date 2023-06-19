@@ -1,4 +1,4 @@
-const gallery = document.querySelectorAll('[data-gallery=""]')
+const gallery = document.querySelectorAll('[data-gallery]')
 const modalSrc = document.querySelector('#modal-src div')
 const background2 = document.querySelector('#background2')
 const modal = document.querySelector('#modal')

@@ -71,6 +71,9 @@ h6 {
     text-align: center;
 }
 
+#baner {
+    position: relative;
+}
 #baner #minor {
     padding-top: 17%;
     background-color: var(--color-5);
